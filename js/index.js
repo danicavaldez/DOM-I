@@ -43,10 +43,18 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 const nav = document.querySelector("nav");
 const navItems = document.querySelectorAll("a");
-
 navItems[0].textContent = siteContent.nav["nav-item-1"];
 navItems[1].textContent = siteContent.nav["nav-item-2"];
 navItems[2].textContent = siteContent.nav["nav-item-3"];
 navItems[3].textContent = siteContent.nav["nav-item-4"];
 navItems[4].textContent = siteContent.nav["nav-item-5"];
 navItems[5].textContent = siteContent.nav["nav-item-6"];
+
+const header = document.querySelector("h1");
+header.textContent = siteContent.cta.h1;
+
+const headerImg = document.querySelector("#cta-img")
+headerImg.src = siteContent["cta"]["img-src"];
+
+const button = document.querySelector("button");
+button.textContent = siteContent["cta"]["button"];
