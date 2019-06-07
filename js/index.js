@@ -58,3 +58,11 @@ headerImg.src = siteContent["cta"]["img-src"];
 
 const button = document.querySelector("button");
 button.textContent = siteContent["cta"]["button"];
+
+const topHeaders = document.querySelectorAll(".top-content h4");
+topHeaders[0].textContent = siteContent["main-content"]["features-h4"];
+topHeaders[1].textContent = siteContent["main-content"]["about-h4"];
+
+const topContent = document.querySelectorAll(".top-content p");
+topContent[0].textContent = siteContent["main-content"]["features-content"];
+topContent[1].textContent = siteContent["main-content"]["about-content"];
