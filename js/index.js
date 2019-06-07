@@ -67,6 +67,8 @@ const topContent = document.querySelectorAll(".top-content p");
 topContent[0].textContent = siteContent["main-content"]["features-content"];
 topContent[1].textContent = siteContent["main-content"]["about-content"];
 
+const middleImg = document.querySelector("#middle-img");
+middleImg.src = siteContent["main-content"]["middle-img-src"];
 
 const bottomHeaders = document.querySelectorAll(".bottom-content h4");
 bottomHeaders[0].textContent = siteContent["main-content"]["services-h4"];
